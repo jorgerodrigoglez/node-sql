@@ -1,0 +1,16 @@
+CREATE DATABASE calendar_app;
+USE calendar_app;
+
+-- TABLE USER
+CREATE TABLE users (
+  id INT(11) NOT NULL AUTO_INCREMENT,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  password VARCHAR(60) NOT NULL,
+  created_at timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+) AUTO_INCREMENT=1;
+
+DESCRIBE users;
+
+
