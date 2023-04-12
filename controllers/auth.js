@@ -1,9 +1,11 @@
 const { response } = require('express');
+// encriptador de contraseña
 const bcrypt = require('bcryptjs');
 // database
 const pool = require('../database/config');
 // jwt
 const jwt = require("jsonwebtoken");
+// creacion de JWT
 const { createJWT } = require('../helpers/jwt');
 
 const newUser = async( req, res = response) => {
@@ -97,7 +99,7 @@ const loginUser = async( req, res = response) => {
 const renewToken = async( req, res = response) => {
 
     //const uid = req.uid;
-    //const name = req.uid;
+    //const name = req.name;
 
     const { uid, name } = req;
 

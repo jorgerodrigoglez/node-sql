@@ -1,3 +1,5 @@
+// auth - /api/auth/...
+
 //const express = require('express');
 //const router = express.Router;
 
@@ -13,8 +15,6 @@ const { newUser, loginUser, renewToken } = require('../controllers/auth');
 
 const router = Router();
 
-
-// auth - /api/auth/...
 
 // rutas
 // register

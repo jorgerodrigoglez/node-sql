@@ -16,7 +16,8 @@ app.use( express.json() );
 
 // rutas - middleware
 app.use('/api/auth', require('./routes/auth'));
-
+// rutas - middleware
+app.use('/api/events', require('./routes/events'));
 
 // escucha de peticiones
 app.listen( process.env.PORT, () => {
