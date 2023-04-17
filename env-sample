@@ -1,8 +1,8 @@
 PORT=
 
-HOST=localhost
-USER=root
+HOST=
+USER=
 PASSWORD=
-DATABASE=calendar_app
+DATABASE=
 
 SECRET_JWT=
